@@ -7,7 +7,6 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 import org.apache.commons.dbutils.QueryRunner;
-import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
 
 public class SQLHelper {
@@ -42,6 +41,5 @@ public class SQLHelper {
         runner.execute(connection, "DELETE FROM card_transactions");
         runner.execute(connection, "DELETE FROM cards");
         runner.execute(connection, "DELETE FROM users");
-
     }
 }
